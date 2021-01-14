@@ -1,0 +1,12 @@
+@font-face {  
+  font-family: 'PingFang SC';  //重命名字体名
+  src: url('~@/common/font/PingFang.ttf');  //引入字体
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {  
+  font-family: 'DIN Alternate';  //重命名字体名
+  src: url('~@/common/font/DIN-Medium.otf');  //引入字体
+  font-weight: normal;
+  font-style: normal;
+}
