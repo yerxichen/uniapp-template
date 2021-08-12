@@ -14,5 +14,7 @@ const app = new Vue({
 })
 app.$mount()
 
+// 绑定this对象
+Vue.prototype.$vm = app
 // 这里需要写在最后，是为了等Vue创建对象完成，引入"app"对象(也即页面的"this"实例)
 Vue.use(httpInterceptor, app)
