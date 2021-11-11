@@ -2,9 +2,9 @@ import Vue from 'vue'
 import App from './App'
 import uView from "uview-ui";
 import httpInterceptor from '@/common/http.interceptor.js' //网络请求
-import { config } from '@/common/env/constants.js' //全局常量
+import constants from '@/common/env/constants.js' //全局常量
 Vue.use(uView);
-Vue.prototype.$constants = config.constants //常量挂载
+Vue.prototype.$constants = constants //常量挂载
 Vue.config.productionTip = false
 
 App.mpType = 'app'

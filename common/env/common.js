@@ -3,6 +3,6 @@ const path = {
 }
 
 //通用配置
-export const common = {
-	path: path,
+export default {
+	path: path
 }
