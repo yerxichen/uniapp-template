@@ -8,18 +8,21 @@
 </template>
 
 <script>
+import {login} from '../../common/api/login.js'
 	export default {
 		data() {
 			return {
 				title: 'Hello'
 			}
 		},
-		onLoad() {
-
-		},
-		methods: {
-
-		}
+    onLoad() {
+      this.init()
+    },
+    methods: {
+      async init(){
+        const res = await login()
+      }
+    }
 	}
 </script>
 
