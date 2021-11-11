@@ -10,7 +10,7 @@ const usesMock = function (){
 		Mock.mock(dev.baseUrl + i.url, i.type || 'get', {
 			success: true,
 			code: 0,
-			data: i.response.data,
+			result: i.response.data,
 			message: '成功'
 		})
 	}
