@@ -41,7 +41,7 @@ const install = (Vue, vm) => {
 	// 响应拦截，判断状态码是否通过
 	Vue.prototype.$u.http.interceptor.response = (res) => {
 		if (res.success) {
-			if(res.code==200){
+			if(res.code==0){
 				return res.result;
 			}else{
 				return res;
